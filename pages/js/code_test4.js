@@ -4,9 +4,9 @@ var question_num = 0;
 var types = {
 
 0 : 0,
-12 : 0,
-16 : 0,
-20 : 0,
+11 : 0,
+18 : 0,
+23 : 0,
 30 : 0,
 50 : 0,
 300 : 0,
@@ -311,5 +311,6 @@ else
 	if(!found)
 		alert("Nothing chosen");
 }
+
 
 }

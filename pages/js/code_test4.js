@@ -15,13 +15,13 @@ var types = {
 
 var results = {
 
-0 : "Гу-гу га-га?",
-12 : "Поздравляю, Вы застряли в самом постыдном периоде жизни",
-16 : "Вы это вы.",
-20 : "Молодость только начинется, всё впереди, Вы уже ни во что не верите, но пытаетесь",
-30 : "Каково жить с депрессией и ипотекой?",
-50 : "Колени уже хрустят, но душа ещё",
-300 : "Как Вы ещё передвигаетесь по этому свету?",
+0 : "Goo-goo gaa-gaa?",
+11 : "Congratulations, you are stuck in quite an embarassing time period for life",
+18 : "Young and full of hopes",
+23 : "Fully entering your independent and responsible era",
+30 : "How the time flies, so much behind, as much ahead",
+50 : "Knees are weak, but the spirit is still strong!",
+300 : "How are you alive?",
 
 }
 
@@ -29,36 +29,36 @@ const rounds = [
 
 {
 
-name : "Введите имя",
+name : "Enter your name",
 
   },
 
 {
 
-name : "Вы следите за трендами?",
+name : "Do you follow the trends?",
 
-options : ["Скибиди туалет!!!", "Да, я не кринж", "..Бритни Спирс?", "Ну, так, пытаюсь быть в курсе", "...", "Зачем?", "За чем?"],
+options : ["six seven six seven six-", "Not really, it's not my first priority", "Somewhat, I usually follow the ones I resonate with", "Yeah, sure!", "...", "Of course, I follow multiple stylists and bloggers, I love staying on top of things!", "What doth thee cullionly whe thee sayeth \"trends\"?"],
 
 do(option){
 
 	if (option == "1")
 	{
-		types["12"] += 1;
+		types["11"] += 1;
 	}
 
 	if (option == "2")
 	{
-		types["16"] += 1;
+		types["50"] += 1;
 	}
 
 	if (option == "3")
 	{
-		types["20"] += 1;
+		types["18"] += 1;
 	}
 
 	if (option == "4")
 	{
-		types["30"] += 1;
+		types["23"] += 1;
 	}
 
 	if (option == "5")
@@ -68,7 +68,7 @@ do(option){
 
 	if (option == "6")
 	{
-		types["50"] += 1;
+		types["30"] += 1;
 	}
 
 	if (option == "7")
@@ -82,15 +82,15 @@ do(option){
 
 {
 
-name : "Как колени?",
+name : "How are your joints?",
 
-options : ["*хруст*", "После операции", "А с ними должно быть что-то?", "...", "Я не выходил на свет уже 100 лет"],
+options : ["*cracks*", "Already had an operation", "..Something should be wrong with them?", "...", "I has't not hath felt aught but numb since 1700s"],
 
 do(option){
 
 	if (option == "1")
 	{
-		types["16"] += 1; types["20"] += 1; types["30"] += 1;
+		types["18"] += 1; types["23"] += 1; types["30"] += 1;
 	}
 
 	if (option == "2")
@@ -100,7 +100,7 @@ do(option){
 
 	if (option == "3")
 	{
-		types["12"] += 1;
+		types["11"] += 1;
 	}
 
 	if (option == "4")
@@ -119,9 +119,9 @@ do(option){
 
 {
 
-name : "Кем хотите стать в будущем?",
+name : "Who do you want to become when you are older?",
 
-options : ["...", "Блогером", "Ну, юрист там.. А может и в IT уйду...", "Открою свой бизнес", "Графом", "Главным инжинером завода", "А надо уже было выбрать?..."],
+options : ["...", "Youtuber", "Whatever I'm studying", "I want to open my business", "The jobs of mere humans doth not apply to me", "I hope I'll retire", "All but unemployed"],
 
 do(option){
 
@@ -132,12 +132,12 @@ do(option){
 
 	if (option == "2")
 	{
-		types["12"] += 1;
+		types["11"] += 1;
 	}
 
 	if (option == "3")
 	{
-		types["20"] += 1;
+		types["18"] += 1;
 	}
 
 	if (option == "4")
@@ -157,7 +157,7 @@ do(option){
 
 	if (option == "7")
 	{
-		types["16"] += 1;
+		types["23"] += 1;
 	}
 
 },
@@ -166,9 +166,9 @@ do(option){
 
 {
 
-name : "Выберите песню",
+name : "What's your prefered way of reading?",
 
-options : ["CoComelon", "I came in like a wreeecking baaaall", "Я люблю, ненавижу — у меня срывает крышууу", "*что-то на корейском* ...We are, we are together, bulletproof", "Личный музыкант при дворе", "Зеленоглазое такси... притормози, притормози..."],
+options : ["...", "Ewww, reading", "My eyesight isn't that great for it, so whichever is accessible", "Electronic books, maybe even a tablet for them", "Paper books have a certain vibe, yk?", "On fusty paper, in the lighteth of a candle"],
 
 do(option){
 
@@ -179,74 +179,27 @@ do(option){
 
 	if (option == "2")
 	{
-		types["30"] += 1;
+		types["11"] += 1;
 	}
 
 	if (option == "3")
 	{
-		types["12"] += 1;
+		types["50"] += 1;
 	}
 
 	if (option == "4")
-	{
-		types["16"] += 1; types["20"] += 1;
-	}
-
-	if (option == "5")
-	{
-		types["300"] += 1;
-	}
-
-	if (option == "6")
-	{
-		types["50"] += 1;
-	}
-
-},
-
-  },
-
-{
-
-name : "Как Вы выбираете одежду?",
-
-options : ["На рынке", "Что стилист в инсте посоветует", "Ну, у меня есть какой-то стиль, и я его придерживаюсь", "Что понравится, то и беру, хотя пытаюсь как-то сочетать всё вместе", "...", "Мантия.", "Ты чё, не шаришь за тренды? Бумер"],
-
-do(option){
-
-	if (option == "1")
-	{
-		types["50"] += 1;
-	}
-
-	if (option == "2")
 	{
 		types["30"] += 1;
 	}
 
-	if (option == "3")
-	{
-		types["20"] += 1;
-	}
-
-	if (option == "4")
-	{
-		types["16"] += 1;
-	}
-
 	if (option == "5")
 	{
-		types["0"] += 1;
+		types["23"] += 1; types["18"] += 1;
 	}
 
 	if (option == "6")
 	{
 		types["300"] += 1;
-	}
-
-	if (option == "7")
-	{
-		types["12"] += 1;
 	}
 
 },
@@ -259,7 +212,7 @@ function setQuestions(qnum)
 {
 
 if (question_num == 1)
-	document.getElementById("control").value = "Дальше";
+	document.getElementById("control").value = "Next";
 
 document.getElementById("question").innerHTML = rounds[qnum].name;
 
@@ -293,13 +246,15 @@ if (question_num == 0)
 	if (el.value != "")
 	{
 		name = el.value;
+		start_test(name);
+		
 		question_num++;
 		setTimeout(setQuestions(question_num), 4000);
 
 	}
 	else
 	{
-		alert("Введите имя");
+		alert("Enter your name");
 	}
 
 }
@@ -313,23 +268,25 @@ else if (question_num == rounds.length - 1)
 		if(radio.checked){
 			found = true;	
 			var result = getMaxKey(types)[0];
-			question_num++;
-			document.getElementById("test-form").innerHTML = '<label for = "name" id = "question">Поздравляю, ' + name + '! Вам ' + result + ' лет</label><br><br>' +
-			'<div for = "questions" id = "form">' + results[result] + '</div><br><br>' +
-			'<input type="button" name="button" onclick = "ClickButton()" value="Пройти заново"><br><br>';
+			finish_test(name, result);
 
-			document.getElementById("test-img").src = "img/age/" + result + ".GIF";
+			question_num++;
+			document.getElementById("test-form").innerHTML = '<label for = "name" id = "question">Congrats, ' + name + '! You are ' + result + ' years old!</label><br><br>' +
+			'<div for = "questions" id = "form">' + results[result] + '</div><br><br>' +
+			'<input type="button" name="button" onclick = "ClickButton()" value="Retake"><br><br>';
+
+			document.getElementById("test-img").src = "../img/age/" + result + ".gif";
 		}
 	}
 
 	if(!found)
-		alert("Ничего не выбрано");
+		alert("Nothing chosen");
 
 
 }
 else if (question_num >= rounds.length)
 {
-	if (confirm("Вы уверены, что хотите перепройти тест?"))
+	if (confirm("Are you sure you want to start over?"))
 		location.reload();
 		
 
@@ -352,7 +309,7 @@ else
 	}
 
 	if(!found)
-		alert("Ничего не выбрано");
+		alert("Nothing chosen");
 }
 
 }

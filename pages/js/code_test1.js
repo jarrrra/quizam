@@ -363,7 +363,7 @@ else if (question_num == rounds.length - 1)
 }
 else if (question_num >= rounds.length)
 {
-	if (confirm("You sure you want to start over?"))
+	if (confirm("Are you sure you want to start over?"))
 		location.reload();
 		
 

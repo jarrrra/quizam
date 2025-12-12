@@ -1,0 +1,61 @@
+run_string
+{
+font-size: 25px;
+font-family: Comic Sans;
+font-style:italic;
+color: #82d197;
+}
+
+body
+{
+background: #5d3582;
+font-size: 20px;
+font-family:Times New Roman;
+}
+
+header
+{
+font-size: 50px;
+font-family:Courier New;
+font-weight:bold;
+color: #613310;
+text-align: center;
+}
+#bigname
+{
+color: white;
+text-align: left;
+position: relative;
+left: 10px;
+}
+
+[for = "name"]
+{
+color: white;
+text-align: left;
+position: relative;
+left: 10px;
+font-size: 40px;
+font-family:Courier New;
+font-weight:bold;
+}
+.test-title
+{
+font-size: 36px;
+font-family:Fantasy;
+text-align: center;
+font-weight:normal;
+}
+
+input
+{
+font-size: 20px;
+font-family: Comic Sans;
+}
+#form
+{
+color: white;
+position: relative;
+font-size: 20px;
+font-family: Comic Sans;
+}

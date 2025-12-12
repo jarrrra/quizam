@@ -1,2 +1,2 @@
 # quizam
-website
+website-flavoured product

@@ -352,7 +352,7 @@ else if (question_num == rounds.length - 1)
 			'<div for = "questions" id = "form">' + results[result] + '</div><br><br>' +
 			'<input type="button" name="button" onclick = "ClickButton()" value="Retake"><br><br>';
 
-			document.getElementById("test-img").src = "../img/mbti/" + result + ".GIF";
+			document.getElementById("test-img").src = "../img/mbti/" + result + ".gif";
 		}
 	}
 
@@ -388,5 +388,6 @@ else
 	if(!found)
 		alert("Nothing chosen");
 }
+
 
 }
